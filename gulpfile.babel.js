@@ -5,8 +5,19 @@ import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
 
+var install = require("gulp-install");
+
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+
+gulp.src(['./bower.json', './package.json'])
+  .pipe(install());
+
+gulp.task('gulp-ng-annotate', function(){
+  return gulp.src('app/scripts/*.js')
+  .pipe(ngAnnotate())
+  .pipe(gulp.dest('dist'));
+})
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.css')
@@ -93,7 +104,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
     notify: false,
     port: 9000,
     server: {
-      baseDir: ['.tmp', 'app'],
+      baseDir: ['app', '.tmp'],
       routes: {
         '/bower_components': 'bower_components'
       }
@@ -117,7 +128,10 @@ gulp.task('serve:dist', () => {
     notify: false,
     port: 9000,
     server: {
-      baseDir: ['dist']
+      baseDir: ['dist'],
+      routes: {
+        '/bower_components': 'bower_components'
+      }
     }
   });
 });
