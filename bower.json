@@ -5,7 +5,7 @@
     "modernizr": "~2.8.1",
     "angular-route": "~1.4.3"
   },
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/kmattiko/SkimMatt",
   "authors": [
     "Kim Mattiko <amberlie@rocketmail.com>"
