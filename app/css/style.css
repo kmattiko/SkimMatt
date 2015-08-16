@@ -379,6 +379,7 @@ Sidebar
 	height:100%;
 	z-index:3;
 	background:#474D5D;
+	color: lightgrey;
 	-webkit-transform: translate3d(0,0,0);
 }
 .desktop-screen-navigation{
