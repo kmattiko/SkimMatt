@@ -1,0 +1,54 @@
+{
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "devDependencies": {
+    "babel": "^5.5.6",
+    "browser-sync": "^2.2.1",
+    "del": "^1.1.1",
+    "gulp": "^3.9.0",
+    "main-bower-files": "^2.5.0",
+    "opn": "^1.0.1",
+    "wiredep": "^2.2.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "name": "skimmatt",
+  "description": "My Professional Portfolio Site",
+  "version": "1.0.0",
+  "main": "gulpfile.babel.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel": "^5.8.21",
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "ng-annotate": "^1.0.2",
+    "opn": "^1.0.2",
+    "wiredep": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmattiko/SkimMatt.git"
+  },
+  "author": "Kim Mattiko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmattiko/SkimMatt/issues"
+  },
+  "homepage": "https://github.com/kmattiko/SkimMatt#readme"
+}
